@@ -64,7 +64,7 @@ function checkAnswer() {
     alert(`Awww... You answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
   }
 
-  runGame{calculatedAnswer[1]};
+  runGame(calculatedAnswer[1]);
 
 }
 
@@ -80,7 +80,7 @@ function calculateCorrectAnswer() {
   let operator = document.getElementById("operator").innerText;
 
   if (operator === "+") {
-    return [operator1 + operator2, "addition"];
+    return [operand1 + operand2, "addition"];
   } else {
     alert(`Unimplemented operator ${operator}`);
     throw `Unimplemented operator ${operator}. Aborting!`;
